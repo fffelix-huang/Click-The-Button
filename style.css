@@ -14,3 +14,14 @@
 .main-button:hover {
     background-color: rgb(3, 233, 233);
 }
+
+#click-count {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #140101;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 20px;
+}
