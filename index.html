@@ -4,13 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Click The Button!</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,700&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:200,700&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <span id="click-count"></span>
-    <button class="main-button" id="main-button">Click Me</button>
+    <span id="money-count">10$</span>
+    <button id="main-button">Click Me</button>
+    <div id="item-container">
+        <div class="item">
+            <div class="item-img"></div>
+            <span class="item-text">+1$/click</span>
+            <button class="buy-button">5$</button>
+        </div>
+
+        <div class="item">
+            <div class="item-img"></div>
+            <span class="item-text">+10$/click</span>
+            <button class="buy-button">10000000000$</button>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
 

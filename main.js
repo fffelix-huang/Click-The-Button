@@ -1,16 +1,23 @@
+let totalClick = localStorage.getItem('click-count') || 0n;
+let totalMoney = localStorage.getItem("money-count") || 0n;
+
 window.onload = () => {
-    let totalClick = localStorage.getItem("click-count") || 0;
-    const counter = document.getElementById("click-count");
-    counter.textContent = totalClick;
+    const clickCounter = document.getElementById("click-count");
+    clickCounter.textContent = `Total Click: ${totalClick}`;
+
+    const moneyCounter = document.getElementById("money-count");
+    moneyCounter.textContent = `${totalMoney}$`
 };
 
-let totalClick = localStorage.getItem('click-count') || 0n;
-
-const counter = document.getElementById("click-count");
+const clickCounter = document.getElementById("click-count");
+const moneyCounter = document.getElementById("money-count");
 const mainButton = document.getElementById("main-button");
 
 mainButton.onclick = () => {
     totalClick++;
-    counter.textContent = totalClick;
+    totalMoney++;
+    clickCounter.textContent = `Total Click: ${totalClick}`;
+    moneyCounter.textContent = `${totalMoney}$`;
     localStorage.setItem('click-count', totalClick);
+    localStorage.setItem('money-count', totalMoney);
 };

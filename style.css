@@ -1,17 +1,22 @@
-.main-button {
+* {
+    font-family: "Alfa Slab One", cursive;
+}
+
+#main-button {
     background-color: aqua;
+    border-style: none;
     height: 70px;
     width: 150px;
+    top: 50%;
+    left: 50%;
     border-radius: 7%;
     font-size: 20px;
     cursor: pointer;
     position: fixed;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.main-button:hover {
+#main-button:hover {
     background-color: rgb(3, 233, 233);
 }
 
@@ -24,4 +29,64 @@
     border-radius: 50%;
     padding: 5px 10px;
     font-size: 20px;
+}
+
+#money-count {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    color: black;
+    text-align: center;
+    font-size: xx-large;
+}
+
+#item-container {
+    background-color: brown;
+    position: absolute;
+    height: 25%;
+    width: 99%;
+    top: 75%;
+}
+
+#item-container .item {
+    background-color: rgb(240, 222, 146);
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-left: 1%;
+    height: 90%;
+    width: 10%;
+    border-radius: 5%;
+    top: 5%;
+}
+
+#item-container .item .item-img {
+    background-color: violet;
+    position: relative;
+    height: 60%;
+    width: 90%;
+    border-radius: 10%;
+    top: 5%;
+    left: 5%;
+}
+
+#item-container .item .item-text {
+    position: relative;
+    top: 5%;
+    font-size: x-large;
+}
+
+#item-container .item .buy-button {
+    background-color: yellow;
+    border-style: none;
+    position: relative;
+    height: 20%;
+    width: 90%;
+    border-radius: 10%;
+    margin-top: 5%;
+    font-size: x-large;
+}
+
+#item-container .item .buy-button:hover {
+    background-color: rgb(248, 248, 145);
 }
