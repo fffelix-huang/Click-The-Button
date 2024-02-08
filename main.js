@@ -48,7 +48,6 @@ setInterval(() => {
 let items = document.getElementById("item-container").querySelectorAll(".item");
 
 items.forEach((e) => {
-    console.log(e);
     e.onclick = () => {
         let cost = 0n;
         for(let i = 0; i < e.children.length; i++) {
