@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Click The Button!</title>
-    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:200,700&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/crown.jpg">
 </head>
 
 <body>
@@ -13,18 +13,61 @@
     <span class="info" id="money-count"></span>
     <span class="info" id="money-per-click"></span>
     <span class="info" id="money-per-second"></span>
+    <button id="restart-button">Restart</button>
     <button id="main-button">Click Me</button>
     <div id="item-container">
-        <div class="item">
-            <div class="item-img"></div>
+        <div class="item" id="1mpc">
+            <img class="item-img" src="assets/lucky-clover.jpg"></img>
             <span class="item-text">+$1/click</span>
-            <button class="buy-button">$5</button>
+            <button class="buy-button">$10</button>
         </div>
 
-        <div class="item">
-            <div class="item-img"></div>
+        <div class="item" id="10mpc">
+            <img class="item-img" src="assets/pearl.jpg"></img>
             <span class="item-text">+$10/click</span>
-            <button class="buy-button">$10000000000</button>
+            <button class="buy-button">$150</button>
+        </div>
+
+        <div class="item" id="100mpc">
+            <img class="item-img" src="assets/mermaid.jpg"></img>
+            <span class="item-text">+$100/click</span>
+            <button class="buy-button">$2000</button>
+        </div>
+
+        <div class="item" id="1000mpc">
+            <img class="item-img" src="assets/crown.jpg"></img>
+            <span class="item-text">+$1000/click</span>
+            <button class="buy-button">$30000</button>
+        </div>
+
+        <div class="item" id="100000mpc">
+            <img class="item-img" src="assets/treasure.jpg"></img>
+            <span class="item-text">+$100000/second</span>
+            <button class="buy-button">$5000000</button>
+        </div>
+
+        <div class="item" id="1mps">
+            <img class="item-img" src="assets/penny.jpg"></img>
+            <span class="item-text">+$1/second</span>
+            <button class="buy-button">$50</button>
+        </div>
+
+        <div class="item" id="20mps">
+            <img class="item-img" src="assets/ring.png"></img>
+            <span class="item-text">+$20/second</span>
+            <button class="buy-button">$2000</button>
+        </div>
+
+        <div class="item" id="400mps">
+            <img class="item-img" src="assets/lamborghini.png"></img>
+            <span class="item-text">+$400/second</span>
+            <button class="buy-button">$50000</button>
+        </div>
+
+        <div class="item" id="10000mps">
+            <img class="item-img" src="assets/mona-lisa.jpg"></img>
+            <span class="item-text">+$10000/second</span>
+            <button class="buy-button">$2000000</button>
         </div>
     </div>
     <script src="main.js"></script>
